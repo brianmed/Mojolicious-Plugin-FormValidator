@@ -8,7 +8,7 @@ plugin 'FormValidator';
 
 get '/' => sub {
   my $self = shift;
-  $self->render_text('Hello Mojo!');
+  $self->render( text => 'Hello Mojo!' );
 };
 
 my $t = Test::Mojo->new;
